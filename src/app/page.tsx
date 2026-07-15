@@ -39,10 +39,18 @@ export default function Home() {
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-16 px-6 py-12 md:px-10">
       <section className="space-y-6 border-b border-border pb-12">
-        <div className="w-12 h-12 bg-muted rounded-lg flex items-center justify-center">
-          <span className="text-xs font-semibold text-muted-foreground">Logo</span>
-        </div>
-        <Badge variant="secondary">Common Loop Works</Badge>
+        <a href="/" className="inline-flex">
+          <div className="w-40 h-40 flex items-center justify-center shadow-md hover:shadow-lg transition-shadow duration-200">
+            <Image
+              src="/clw_logo.png"
+              alt="Common Loop Works Logo"
+              width={500}
+              height={500}
+              className="w-14 h-14"
+            />
+          </div>
+        </a>
+        {/* <Badge variant="secondary">Common Loop Works</Badge> */}
         <h1 className="max-w-3xl text-4xl font-semibold tracking-tight md:text-6xl">
           Build software systems that move your business forward.
         </h1>
