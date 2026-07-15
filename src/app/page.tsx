@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -38,19 +37,19 @@ const highlights = [
 export default function Home() {
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-16 px-6 py-12 md:px-10">
-      <section className="space-y-6 border-b border-border pb-12">
-        <a href="/" className="inline-flex">
-          <div className="w-40 h-40 flex items-center justify-center shadow-md hover:shadow-lg transition-shadow duration-200">
+      <section className="space-y-6 border-b border-border pb-12 text-left">
+        <a href="/" className="inline-flex max-w-fit">
+          <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-shadow duration-200 hover:shadow-md">
             <Image
               src="/clw_logo.png"
               alt="Common Loop Works Logo"
-              width={500}
-              height={500}
-              className="w-14 h-14"
+              width={496}
+              height={166}
+              priority
+              className="h-auto w-[248px] max-w-full md:w-[320px]"
             />
           </div>
         </a>
-        {/* <Badge variant="secondary">Common Loop Works</Badge> */}
         <h1 className="max-w-3xl text-4xl font-semibold tracking-tight md:text-6xl">
           Build software systems that move your business forward.
         </h1>
