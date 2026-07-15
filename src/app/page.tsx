@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
@@ -38,6 +39,9 @@ export default function Home() {
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-16 px-6 py-12 md:px-10">
       <section className="space-y-6 border-b border-border pb-12">
+        <div className="w-12 h-12 bg-muted rounded-lg flex items-center justify-center">
+          <span className="text-xs font-semibold text-muted-foreground">Logo</span>
+        </div>
         <Badge variant="secondary">Common Loop Works</Badge>
         <h1 className="max-w-3xl text-4xl font-semibold tracking-tight md:text-6xl">
           Build software systems that move your business forward.
@@ -57,11 +61,21 @@ export default function Home() {
               Start a conversation <ArrowUpRight className="size-4" />
             </Button>
           </a>
-          <a href="https://echorand.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://echorand.me/" target="_blank" rel="noopener noreferrer">
             <Button variant="outline" size="lg">
               Writing & thinking
             </Button>
           </a>
+        </div>
+        <div className="mt-8 w-full rounded-lg border border-border overflow-hidden">
+          <Image
+            src="/placeholder-hero.jpg"
+            alt="Common Loop Works - Software Consulting"
+            width={1200}
+            height={675}
+            priority
+            className="w-full h-auto"
+          />
         </div>
       </section>
 
