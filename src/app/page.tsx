@@ -37,7 +37,7 @@ const highlights = [
 export default function Home() {
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-16 px-6 py-12 md:px-10">
-      <section className="space-y-6 border-b border-border pb-12 text-left">
+      <section className="space-y-4 border-b border-border pb-12 text-left">
         <a href="/" className="inline-flex max-w-fit">
           <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-shadow duration-200 hover:shadow-md">
             <Image
@@ -76,7 +76,7 @@ export default function Home() {
         </div>
         <div className="mt-8 w-full rounded-lg border border-border overflow-hidden">
           <Image
-            src="/placeholder-hero.jpg"
+            src="/hero.png"
             alt="Common Loop Works - Software Consulting"
             width={1200}
             height={675}
@@ -122,6 +122,11 @@ export default function Home() {
           quality, or shape your roadmap, let&apos;s connect.
         </p>
       </section>
+
+      <footer className="border-t border-border pt-6 text-center text-sm text-muted-foreground">
+        <p>Common Loop Works Pty Ltd</p>
+        <p>Sydney, Australia, 2010</p>
+      </footer>
     </main>
   );
 }
